@@ -1,0 +1,13 @@
+<div class="background">
+
+
+
+  <div class="contents_row">
+    <% @rooms.each do |room| %>
+      <div class="content_post">
+        <%= image_tag room.image, class: 'room-image'%>
+      </div>
+    <% end %>
+  </div>
+
+</div>
