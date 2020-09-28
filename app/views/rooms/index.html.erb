@@ -1,0 +1,28 @@
+ <div class="background">
+  <div class="no">
+  </div>
+    <div class="menu">
+      <ul class="menu-list">
+        <li class="menu-list1"><a heref="#">リスト1</a></li>
+        <li class="menu-list1"><a heref="#">リスト2</a></li>
+        <li class="menu-list1"><a heref="#">リスト3</a></li>
+        <li class="menu-list1"><a heref="#">リスト4</a></li>
+        <li class="menu-list1"><a heref="#">リスト5</a></li>
+      </ul>
+
+    </div>
+
+    <div class="contents">
+      <ul class="contents-list">
+        <h2 class="contents-title">ピックアップ物件</h2>
+        <% @rooms.each do |room| %>
+          <li class="contents-list1">
+            <div class="content_post">
+             <%= image_tag room.image, class: 'room-image'%>
+            </div>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+
+</div>
