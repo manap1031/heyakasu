@@ -1,16 +1,19 @@
+
 /*ヘッダーまわりはサイトに合わせて調整してください*/
 header {
+  width: 100%;
   padding:15px 30px;
   background: skyblue;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
 }
 
 .title{
   font-size: 30px;
   font-weight: bold;
-  margin-right: 25px;
+  margin-right: 80px;
 }
 
 #nav-drawer {
@@ -36,7 +39,7 @@ header {
   height: 5px;/*線の太さ*/
   width: 30px;/*長さ*/
   border-radius: 3px;
-  background: #555;
+  background: black;
   display: block;
   content: '';
   cursor: pointer;
@@ -95,9 +98,12 @@ header {
 }
 
 .list{
+  list-style: none;
   text-align: center;
   margin-top: 15px;
   font-size: 20px;
+  font-weight: bold;
+  
 }
 
 footer{

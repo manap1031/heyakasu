@@ -1,5 +1,35 @@
 .background{
+  background-color: whitesmoke;
   width: 100%;
   height: 100vh;
-  background-color: snow;
+  background-color: whitesmoke;
+}
+.no{
+  background-color: skyblue;
+  height: 80px;
+}
+
+/* リスト部分 */
+.menu{
+  background-color: lightgoldenrodyellow;
+  padding-bottom: 5px;
+  border-top: 2px dotted;
+  border-bottom: 2px dotted;
+}
+.menu-list{
+  display: flex;
+  justify-content: space-around;
+  font-size: 15px;
+  font-weight: bold;
+}
+/* リスト部分 */
+
+.contents{
+  background-color: lightgreen;
+}
+.contents-title{
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 10px;
 }
