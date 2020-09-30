@@ -1,0 +1,123 @@
+.show-title{
+  background-color: darkseagreen;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* 詳細の画像部分 */
+.image-show{
+  background-color: darkkhaki;
+  margin-top: 20px;
+}
+.image-show1{
+  background-color: darkorange;
+  text-align: center;
+}
+.room-image-show{
+  height: 70%;
+  width: 70%;
+  min-height: 300px;
+  border: 3px solid #ccc;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+}
+/* 詳細の画像部分 */
+
+/* 詳細の部分 */
+.contents-show{
+  margin: 20px 0;
+}
+.reg-new-show1{
+  /* background-color: crimson; */
+  display: flex;
+  align-items: center;
+  margin: 0 50px;
+}
+.reg-show1{
+  background-color: lightgray;
+  border: 2px solid chocolate;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 30%;
+}
+.reg-show2{
+  background-color: lightgray;
+  width: 30%;
+  text-align: center;
+}
+.reg-show3{
+  /* background-color: lightgreen; */
+  width: 70%;
+  font-size: 20px;
+  font-weight: bold;
+}
+.reg-new-show2{
+  background-color: seashell;
+  height: 50px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  border: 2px solid chocolate;
+}
+.reg-show4{
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+/* 詳細の部分 */
+
+/* その他の条件の部分 */
+.reg-new-show10{
+  /* background-color: crimson; */
+  display: flex;
+  align-items: center;
+  margin: 0 50px;
+}
+.reg-show10{
+  background-color: lightgray;
+  border: 2px solid chocolate;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 30%;
+}
+.reg-show20{
+  background-color: lightgray;
+  width: 30%;
+  text-align: center;
+}
+.reg-show30{
+  /* background-color: lightgreen; */
+  width: 70%;
+  font-size: 20px;
+  font-weight: bold;
+}
+.reg-new-show20{
+  background-color: seashell;
+  height: 50px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  border: 2px solid chocolate;
+}
+.reg-show40{
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+/* その他の条件の部分 */
+
+/* 戻るボタン */
+.show-btn{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.show-btn1{
+  font-size: 30px;
+  text-align: center;
+}
+/* 戻るボタン */
