@@ -17,10 +17,8 @@ ActiveRecord::Schema.define(version: 2020_09_28_063425) do
     t.integer "prefectures"
     t.string "city"
     t.string "town"
-    t.string "address_number"
     t.string "building"
-    t.integer "price"
-    t.date "times"
+    t.string "phone_number"
     t.text "comment"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

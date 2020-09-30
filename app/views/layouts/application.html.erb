@@ -19,7 +19,7 @@
 
           <div id="nav-content">
             <ul class="list-contents">
-              <li class="list">リスト1</li>
+              <li class="list"><a href="/rooms/new">空き部屋を登録する</a></li>
               <li class="list">リスト2</li>
               <li class="list">リスト3</li>
               <li class="list">リスト4</li>
@@ -28,8 +28,18 @@
 
           </div>
         </div>
-        <h1 class="title">HEYAKASU</h1>
-        
+
+        <div class="new">
+          <h1 class="title">HEYAKASU</h1>
+          <div class="new1">
+            <div class="new2">
+              <%= link_to "ログイン"%>
+            </div>
+            <div class="new3">
+              <%= link_to "会員登録"%>
+            </div>
+          </div>
+        </div>
       </header>
       
     <%= yield %>
