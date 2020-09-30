@@ -5,12 +5,9 @@ class CreateRooms < ActiveRecord::Migration[6.0]
       t.integer :prefectures
       t.string :city
       t.string :town
-      t.string :address_number
       t.string :building
-      t.integer :price
-      t.date :times
+      t.string :phone_number
       t.text :comment
-
       t.timestamps
     end
   end
