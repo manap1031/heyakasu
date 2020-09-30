@@ -1,0 +1,129 @@
+<div class="background">
+  <div class="no">
+  </div>
+
+  <h2 class="show-title">空き部屋の詳細</h2>
+  <div class="image-show">
+    <div class="image-show1">
+      <%= image_tag @room.image, class: "room-image-show"%>
+    </div>
+  </div>
+
+  <div class="contents-show">
+    <div class="reg-new-show1">
+      <div class="reg-show1">
+        <div class="reg-show2">
+        </div>
+        <div class="reg-show3">
+          <p>都道府県</p>
+        </div>
+      </div>
+
+      <div class="reg-new-show2">
+        <div class="reg-show4">
+          <%= @room.prefectures %>
+        </div>
+      </div>
+    </div>
+
+    <div class="reg-new-show1">
+      <div class="reg-show1">
+        <div class="reg-show2">
+        </div>
+        <div class="reg-show3">
+          <p>郵便番号</p>
+        </div>
+      </div>
+
+      <div class="reg-new-show2">
+        <div class="reg-show4">
+          <%= @room.postal_code %>
+        </div>
+      </div>
+    </div>
+
+    <div class="reg-new-show1">
+      <div class="reg-show1">
+        <div class="reg-show2">
+        </div>
+        <div class="reg-show3">
+          <p>市区町村</p>
+        </div>
+      </div>
+
+      <div class="reg-new-show2">
+        <div class="reg-show4">
+          <%= @room.city %>
+        </div>
+      </div>
+    </div>
+
+    <div class="reg-new-show1">
+      <div class="reg-show1">
+        <div class="reg-show2">
+        </div>
+        <div class="reg-show3">
+          <p>地域/番地</p>
+        </div>
+      </div>
+
+      <div class="reg-new-show2">
+        <div class="reg-show4">
+          <%= @room.town %>
+        </div>
+      </div>
+    </div>
+
+    <div class="reg-new-show1">
+      <div class="reg-show1">
+        <div class="reg-show2">
+        </div>
+        <div class="reg-show3">
+          <p>建物名</p>
+        </div>
+      </div>
+
+      <div class="reg-new-show2">
+        <div class="reg-show4">
+          <%= @room.building %>
+        </div>
+      </div>
+    </div>
+
+    <div class="reg-new-show1">
+      <div class="reg-show1">
+        <div class="reg-show2">
+        </div>
+        <div class="reg-show3">
+          <p>電話番号</p>
+        </div>
+      </div>
+
+      <div class="reg-new-show2">
+        <div class="reg-show4">
+          <%= @room.phone_number %>
+        </div>
+      </div>
+    </div>
+
+    <div class="reg-new-show10">
+      <div class="reg-show10">
+        <div class="reg-show20">
+        </div>
+        <div class="reg-show30">
+          <p>その他の条件</p>
+        </div>
+      </div>
+
+      <div class="reg-new-show20">
+        <div class="reg-show40">
+          <%= @room.comment %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-btn">
+    <%= link_to '戻る', root_path, class: "show-btn1"%>
+  </div>
+</div>
