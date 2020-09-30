@@ -7,7 +7,7 @@
   </div>
 
   <div class="contents-new">
-    <%= form_with(model: @room, local:true) do |form| %>
+    <%= form_with(model: @room, local: true) do |form| %>
 
     <div class=reg-new1>
       <div class=reg1>
@@ -15,7 +15,7 @@
           <span class="indispensable">必須</span>
         </div>
         <div class="reg3">
-          <p>会社概要</p>
+          <p>空き部屋画像</p>
         </div>
       </div>
 
@@ -84,6 +84,23 @@
         </div>
         <div class="reg3">
           <p>地域/番地</p>
+        </div>
+      </div>
+
+      <div class="reg-new2">
+        <div class="reg4">
+        <%= form.text_field :town, class: 'reg5'%>
+        </div>
+      </div>
+    </div>
+
+    <div class=reg-new1>
+      <div class=reg1>
+        <div class="reg2">
+          <span class="indispensable">必須</span>
+        </div>
+        <div class="reg3">
+          <p>建物名</p>
         </div>
       </div>
 

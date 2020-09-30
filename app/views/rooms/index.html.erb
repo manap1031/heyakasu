@@ -18,7 +18,8 @@
         <% @rooms.each do |room| %>
           <li class="contents-list1">
             <div class="content_post">
-             <%= image_tag room.image, class: 'room-image'%>
+             <%= image_tag room.image, class: 'room-image' if room.image.attached? %>
+             
             </div>
           </li>
         <% end %>
