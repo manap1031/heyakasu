@@ -1,0 +1,17 @@
+<div class="background">
+  <div class="no">
+  </div>
+  <div class="contents">
+      <ul class="contents-list">
+        <% @rooms.each do |room| %>
+          <li class="contents-list1">
+            <div class="content_post">
+             <%= link_to room_path(room.id) do %>
+              <%= image_tag room.image, class: 'room-image' if room.image.attached? %>
+             <% end %>
+            </div>
+          </li>
+        <% end %>
+      </ul>
+  </div>
+</div>
