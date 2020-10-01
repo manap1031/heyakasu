@@ -1,0 +1,69 @@
+.login-title{
+  font-size: 30px;
+  font-weight: bold;
+  color: #4c4c4c;
+  margin: 20px 50px;
+  padding-left: 10px;
+  border-left: 3px solid chocolate;
+}
+
+/* 登録記入部分 */
+.contents-new{
+  background-color: cornsilk;
+  border: 2px solid chocolate;
+  margin: 0 50px;
+  padding: 50px 0;
+}
+.reg-new1{
+  /* background-color: crimson; */
+  display: flex;
+  align-items: center;
+  margin: 0 50px;
+}
+.reg1{
+  background-color: lightgray;
+  border: 2px solid chocolate;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 30%;
+}
+.reg2{
+  background-color: lightgray;
+  width: 30%;
+  text-align: center;
+}
+.reg3{
+  /* background-color: lightgreen; */
+  width: 70%;
+  font-size: 20px;
+  font-weight: bold;
+}
+.reg-new2{
+  background-color: seashell;
+  height: 50px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  border: 2px solid chocolate;
+}
+.reg4{
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+.reg5{
+  border: solid 2px chocolate;
+  width: 70%;
+  height: 40px;
+}
+.indispensable{
+  background: #ea352d;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* 登録記入部分 */

@@ -1,0 +1,71 @@
+<div class="background">
+  <div class="no">
+  </div>
+
+  <h2 class="login-title">ログイン</h2>
+
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+  <div class="contents-new">
+    <div class="reg-new1">
+      <div class="reg1">
+        <div class="reg2">
+          <span class="indispensable">必須</span>
+        </div>
+        <div class="reg3">
+          <p>email</p>
+        </div>
+      </div>
+      <div class="reg-new2">
+        <div class="reg4">
+          <%= f.text_field :email, class: 'reg5'%>
+        </div>
+      </div>
+    </div>
+
+    <div class="reg-new1">
+      <div class="reg1">
+        <div class="reg2">
+          <span class="indispensable">必須</span>
+        </div>
+        <div class="reg3">
+          <p>パスワード</p>
+        </div>
+      </div>
+      <div class="reg-new2">
+        <div class="reg4">
+          <%= f.password_field :password, class: 'reg5'%>
+        </div>
+      </div>
+    </div>
+
+    <div class="reg-new1">
+      <div class="reg1">
+        <div class="reg2">
+          <span class="indispensable">必須</span>
+        </div>
+        <div class="reg3">
+          <p>パスワード(確認)</p>
+        </div>
+      </div>
+      <div class="reg-new2">
+        <div class="reg4">
+          <%= f.password_field :password_confirmation, class: 'reg5'%>
+        </div>
+      </div>
+    </div>
+
+    <%# <% if devise_mapping.rememberable? %> 
+      <%# <div class="field"> %>
+        <%# <%= f.check_box :remember_me %> 
+        <%# <%= f.label :remember_me %> 
+      <%# </div> %>
+    <%# <% end %> 
+
+    <div class="send-btn">
+      <%= f.submit "ログイン", class: 'send-btn1' %>
+    </div>
+  <% end %>
+
+  </div>
+</div>

@@ -1,0 +1,176 @@
+<div class="background">
+  <div class="no">
+  </div>
+
+  <h2 class="login-title">会員登録</h2>
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+  
+  <div class="contents-new">
+    <div class="reg-new1">
+      <div class="reg1">
+        <div class="reg2">
+          <span class="indispensable">必須</span>
+        </div>
+        <div class="reg3">
+          <p>お名前(全角)</p>
+        </div>
+      </div>
+      <div class="reg-new2">
+        <div class="reg4">
+        <%= f.text_field :name, class: 'reg5'%>
+        </div>
+      </div>
+    </div>
+
+     <div class="reg-new1">
+      <div class="reg1">
+        <div class="reg2">
+          <span class="indispensable">必須</span>
+        </div>
+        <div class="reg3">
+          <p>お名前(カナ)</p>
+        </div>
+      </div>
+      <div class="reg-new2">
+        <div class="reg4">
+        <%= f.text_field :name_kana, class: 'reg5'%>
+        </div>
+      </div>
+    </div>
+
+    <div class="reg-new1">
+      <div class="reg1">
+        <div class="reg2">
+          <span class="indispensable">必須</span>
+        </div>
+        <div class="reg3">
+          <p>誕生日/年齢/性別</p>
+        </div>
+      </div>
+      <div class="reg-new2">
+        <div class="reg4">
+        <%= f.text_field :birth_day, class: 'reg5'%>
+        </div>
+      </div>
+    </div>
+
+    <div class="reg-new1">
+      <div class="reg1">
+        <div class="reg2">
+          <span class="indispensable">必須</span>
+        </div>
+        <div class="reg3">
+          <p>都道府県</p>
+        </div>
+      </div>
+      <div class="reg-new2">
+        <div class="reg4">
+        <%= f.text_field :prefectures, class: 'reg5'%>
+        </div>
+      </div>
+    </div>
+
+    <div class="reg-new1">
+      <div class="reg1">
+        <div class="reg2">
+          <span class="indispensable">必須</span>
+        </div>
+        <div class="reg3">
+          <p>郵便番号</p>
+        </div>
+      </div>
+      <div class="reg-new2">
+        <div class="reg4">
+        <%= f.text_field :postal_code, class: 'reg5'%>
+        </div>
+      </div>
+    </div>
+
+    <div class="reg-new1">
+      <div class="reg1">
+        <div class="reg2">
+          <span class="indispensable">必須</span>
+        </div>
+        <div class="reg3">
+          <p>市区町村</p>
+        </div>
+      </div>
+      <div class="reg-new2">
+        <div class="reg4">
+        <%= f.text_field :city, class: 'reg5'%>
+        </div>
+      </div>
+    </div>
+
+    <div class="reg-new1">
+      <div class="reg1">
+        <div class="reg2">
+          <span class="indispensable">必須</span>
+        </div>
+        <div class="reg3">
+          <p>地域/番地</p>
+        </div>
+      </div>
+      <div class="reg-new2">
+        <div class="reg4">
+        <%= f.text_field :town, class: 'reg5'%>
+        </div>
+      </div>
+    </div>
+
+    <div class="reg-new1">
+      <div class="reg1">
+        <div class="reg2">
+          <%# <span class="indispensable">必須</span> %>
+        </div>
+        <div class="reg3">
+          <p>建物名</p>
+        </div>
+      </div>
+      <div class="reg-new2">
+        <div class="reg4">
+        <%= f.text_field :building, class: 'reg5'%>
+        </div>
+      </div>
+    </div>
+
+    <div class="reg-new1">
+      <div class="reg1">
+        <div class="reg2">
+          <span class="indispensable">必須</span>
+        </div>
+        <div class="reg3">
+          <p>電話番号</p>
+        </div>
+      </div>
+      <div class="reg-new2">
+        <div class="reg4">
+        <%= f.text_field :phone_number, class: 'reg5'%>
+        </div>
+      </div>
+    </div>
+
+    <div class="reg-new1">
+      <div class="reg1">
+        <div class="reg2">
+          <span class="indispensable">必須</span>
+        </div>
+        <div class="reg3">
+          <p>email</p>
+        </div>
+      </div>
+      <div class="reg-new2">
+        <div class="reg4">
+        <%= f.email_field :name, class: 'reg5'%>
+        </div>
+      </div>
+    </div>
+
+    <div class="send-btn">
+      <%= f.submit "登録", class: 'send-btn1' %>
+    </div>
+    <% end %>
+  </div>
+</div>
