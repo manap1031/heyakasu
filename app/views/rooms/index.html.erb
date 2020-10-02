@@ -11,20 +11,29 @@
       </ul>
     </div>
     
-    <h2 class="contents-title">ピックアップ物件</h2>
+    
+  <h2 class="contents-title">ピックアップ物件</h2>
 
-    <div class="contents">
-      <ul class="contents-list">
-        <% @rooms.each do |room| %>
-          <li class="contents-list1">
-            <div class="content_post">
-             <%= link_to room_path(room.id) do %>
+  <% @rooms.each do |room| %> 
+    <div class="contents-item1">
+      <div class="contents1">
+        <ul class="contents2">
+          <li>
+            <%= link_to room_path(room.id) do %>
               <%= image_tag room.image, class: 'room-image' if room.image.attached? %>
-             <% end %>
-            </div>
-          </li>
-        <% end %>
-      </ul>
+            <% end %> 
+          </li> 
+        </ul>
+      </div>
+
+      <div class="contetns-item2">
+        <div class="contents3">
+          <li class="contents-list"><%= room.postal_code %></li>
+          <li class="contents-list"><%= room.prefectures%></li>
+        </div>
+      </div>
     </div>
+  <% end %>
+
 
 </div>

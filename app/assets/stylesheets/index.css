@@ -1,15 +1,3 @@
-.background{
-  background-color: whitesmoke;
-  width: 100%;
-  height: 100vh;
-  background-color: whitesmoke;
-  overflow: auto;
-}
-.no{
-  background-color: skyblue;
-  height: 80px;
-}
-
 /* リスト部分 */
 .menu{
   background-color: lightgoldenrodyellow;
@@ -25,12 +13,45 @@
 }
 /* リスト部分 */
 
-.contents{
-  background-color: lightgreen;
-}
 .contents-title{
   font-size: 30px;
   text-align: center;
   font-weight: bold;
   padding-top: 10px;
+  margin-bottom: 20px;
 }
+
+/* 画像の部分 */
+.contents-item1{
+  display: flex;
+}
+.contents1{
+  background-color: darkseagreen;
+  margin: 0 0 15px 20px;
+}
+.contents2{
+  background-color: darkturquoise;
+}
+.contetns-item2{
+  background-color: deeppink;
+  margin-bottom: 15px;
+  width: 50vh;
+}
+.contents3{
+  background-color: dimgray;
+}
+.contents-list{
+  list-style: none;
+  border: 2px solid royalblue;
+}
+.room-image{
+  height: 20vh;
+  width: 25vh;
+  margin: 20px 20px;
+  min-height: 200px;
+  border: 3px solid #ccc;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+}
+/* 画像の部分 */
