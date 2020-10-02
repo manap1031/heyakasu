@@ -19,9 +19,12 @@
 
           <div id="nav-content">
             <%= form_with(url: search_rooms_path, local: true, method: :get, class: "search-form") do |form| %>
-            <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input" %>
-            <%= form.submit "検索", class: "search-btn" %>
-            <% end %>
+            
+            <div class="search">
+              <%= form.text_field :keyword, placeholder: "検索する", class: "search-input" %>
+              <%= form.submit "検索", class: "search-btn" %>
+              <% end %>
+            </div>
             <ul class="list-contents">
               <li class="list"><a href="/rooms/new">空き部屋を登録する</a></li>
               <li class="list">リスト2</li>
@@ -34,7 +37,6 @@
         </div>
 
         <div class="new">
-          
           <h1 class="title"><a href="/">HEYAKASU</a></h1>
           <div class="new1">
             <div class="new2">
